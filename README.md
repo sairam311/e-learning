@@ -66,6 +66,3 @@ Technologies Used:
 Troubleshooting:
 - If you encounter a CORS issue when trying to access the backend from the frontend, ensure that CORS is properly configured in your Django settings (django-cors-headers library).
 - If you face issues with the frontend not loading correctly, ensure you have installed all the required Node.js dependencies by running npm install.
-
-Contributing:
-Feel free to fork this repository, submit issues, and contribute via pull requests. All contributions are welcome!
