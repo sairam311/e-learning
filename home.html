@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LogiLearn Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .feature-icon {
+      font-size: 36px;
+      color: #00bcd4;
+      margin-bottom: 15px;
+    }
+
+    .testimonial {
+      background-color: #fff;
+      border-left: 4px solid #00bcd4;
+      padding: 20px;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    footer {
+      background-color: #212529;
+      color: #ccc;
+      padding: 25px 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand fw-semibold" href="#" id="usernameDisplay">LogiLearn</a>
+    <div class="ms-auto dropdown">
+      <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-person-circle me-1"></i> My Profile
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="myprofile.html">View Profile</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to LogiLearn</h1>
+      <p class="lead mt-3">Intelligent. Personalized. Gamified Learning to Build Young Minds.</p>
+      <a href="#" class="btn btn-light btn-lg mt-4">Start Learning</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Platform Highlights</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon"><i class="bi bi-lightbulb-fill"></i></div>
+          <h5>Critical Thinking</h5>
+          <p>Skill-based logic activities to sharpen young minds through smart challenges.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon"><i class="bi bi-graph-up"></i></div>
+          <h5>Real-time Tracking</h5>
+          <p>Smart dashboards for parents and educators to track progress and mastery levels.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-icon"><i class="bi bi-trophy-fill"></i></div>
+          <h5>Gamified Assessments</h5>
+          <p>Motivate students with game-like aptitude tests and leaderboard recognition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80"
+               class="img-fluid rounded" alt="Kids learning">
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3">Built by IIT-IIM Alumni, Loved by 1M+ Students</h3>
+          <p>LogiLearn is designed to develop aptitude from Sr. KG to Grade 9 through curated content, AI-based recommendations, and structured logical training — aligned with global learning standards.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Used by 2000+ schools</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Personalized learning journeys</li>
+            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Scientifically designed content</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center section-title">What Users Say</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            “A fun way to boost my child’s thinking skills. She looks forward to every session.”
+            <br><small>- Anjali D., Parent</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            “I love solving the logic puzzles! It feels like a game, but I know I'm learning.”
+            <br><small>- Aarav, Grade 5</small>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            “A must-have in every school curriculum. The structure is fantastic.”
+            <br><small>- R. Mehta, Educator</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+    <!--  <p class="mb-2">&copy; 2025 LogiLearn. All rights reserved.</p> -->
+      <div>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms</a> |
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Optional: Dynamic Username & Logout Logic -->
+  <script>
+    // Set user name from localStorage (set this during login)
+    const user = localStorage.getItem("username") || "Student";
+    document.getElementById("usernameDisplay").innerText = "Hi, " + user;
+
+    function logout() {
+      // Example logout logic
+      alert("You have been logged out.");
+      localStorage.clear();
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
