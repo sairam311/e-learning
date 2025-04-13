@@ -34,18 +34,18 @@ pip install -r requirements.txt
 Setup the Database
 Run the following commands to apply migrations and set up the database:
 
-# python manage.py makemigrations
-# python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 
 Create a Superuser
 To access the Django Admin, create a superuser:
 
-# python manage.py createsuperuser
+python manage.py createsuperuser
 
 Start the Django Development Server
 Run the Django development server:
 
-# python manage.py runserver
+python manage.py runserver
 
 The backend will be running on http://127.0.0.1:8000/.
 
